@@ -41,7 +41,7 @@ export default function PortfolioSection() {
         <p className="text-gray-700 leading-relaxed">
           Our portfolio showcases our expertise in designing and planning unique
           and unforgettable weddings. From intimate celebrations to grand
-          affairs, we create personalized experiences tailored to our clients'
+          affairs, we create personalized experiences tailored to our clients&apos
           vision and style.
         </p>
       </div>

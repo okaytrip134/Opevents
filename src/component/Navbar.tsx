@@ -89,7 +89,7 @@ const Navbar = () => {
               and Seattle Washington.
             </p>
             <p className="mt-4 text-xs sm:text-sm md:text-base max-w-xs">
-              We believe that there's not much a dance party won’t cure.
+              We believe that there&apos;s not much a dance party won’t cure.
             </p>
           </div>
 

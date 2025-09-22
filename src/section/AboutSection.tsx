@@ -37,7 +37,7 @@ const AboutSection = () => {
 
           {/* Paragraph */}
           <p className="text-gray-700 leading-relaxed mb-6"  style={{ fontFamily: 'var(--font-primary)' }}>
-            Established in 2009, we've produced hundreds (and hundreds!) of
+            Established in 2009, we&apos;ve produced hundreds (and hundreds!) of
             events. We take an agency approach to your event planning – meaning{" "}
             <span className="italic">
               you get an entire team advocating for your event.

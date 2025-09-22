@@ -2,7 +2,6 @@ import AboutSection from "@/section/AboutSection"
 import HeroSection from "@/section/HeroSection"
 import LuxeSection from "@/section/LuxeSection"
 import Offerings from "@/section/Offerings"
-import ImageMarquee from "@/section/ImageMarquee"
 import PortfolioSection from "@/section/PortfolioSection"
 import MarqueeText from "@/component/MarqueeText"
 
