@@ -1,26 +1,47 @@
-@import "tailwindcss";
+  /* ✅ Import Google Fonts FIRST */
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:wght@300;400;600;700&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/noir-et-blanc');
+  @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* ✅ Then import Tailwind (important to keep this AFTER Google Fonts) */
+  @import "tailwindcss";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+  /* ✅ Define font variables in :root */
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-primary: 'Josefin Sans', sans-serif;
+    --font-secondary: 'Delius Swash Caps',sans-serif ;
+    --font-third: 'Noir-et-Blanc', sans-serif;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  /* ✅ Use variables in your styles */
+  body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth /* Smooth scrolling for anchor links */;
+    background-color: #E6DDD2;
+  }
+
+  html, body {
+    height: 100%;
+    overscroll-behavior: none;
+  }
+
+
+
+
+  /* ...existing code... */
+
+
+  @keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: inline-block;
+    min-width: 200%; /* Ensures both sets fit side by side */
+    animation: marquee 30s linear infinite;
+  }
+  /* ...existing code... */
