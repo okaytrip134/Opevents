@@ -41,10 +41,10 @@ export default function EnquiryForm({ open, onClose }: EnquiryFormProps) {
     // ✅ EmailJS Integration
     emailjs
       .sendForm(
-        "service_5i9byjs", // 🔑 replace with actual service ID
-        "template_cxcjyio", // 🔑 replace with actual template ID
+        "service_3n4z0xc", // 🔑 replace with actual service ID
+        "template_m7vlqbd", // 🔑 replace with actual template ID
         form,
-        { publicKey: "qtUbRkf6xGYQIJqNc" } // 🔑 required in new API
+        { publicKey: "rVYUcthqJg_gMeQZt" } // 🔑 required in new API
       )
       .then(
         () => {
