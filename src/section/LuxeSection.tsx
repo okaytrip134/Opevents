@@ -6,18 +6,18 @@ const LuxeSection = () => {
             {/* -------- White Section -------- */}
             <div className="bg-white flex flex-col md:flex-row items-center justify-center md:justify-between h-[700px]">
                 {/* Left Content */}
-                <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-4" style={{ fontFamily: 'var(--font-secondary)' }}>
+                <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-4" >
                     <p className="tracking-widest text-xs sm:text-lg text-gray-500 mb-2">
                         LEARN OUR STORY
                     </p>
 
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-light mb-2 leading-snug" style={{ fontFamily: 'Josefin Sans' }}>
                         SERVICING THE{" "}
-                        <span className="italic text-sky-700">Wild West</span>
+                        <span className="italic text-sky-700" style={{ fontFamily: 'var(--font-secondary)' }}>Wild West</span>
                     </h2>
 
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
-                        we are <span className="font-bold">LUXE</span>
+                    <h3 className="text-2xl sm:text-2xl md:text-3xl font-semibold mb-4">
+                        we are <span className="font-bold" style={{ fontFamily: 'var(--font-third)' }}>OpEvents</span>
                     </h3>
 
                     <div className="h-px w-12 bg-gray-400 mb-4"></div>
@@ -51,7 +51,7 @@ const LuxeSection = () => {
 
                 {/* Right Content */}
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-4">
-                    <p className="tracking-widest text-base sm:text-lg text-gray-400 mb-2" style={{ fontFamily: 'var(--font-secondary)' }}>
+                    <p className="tracking-widest text-base sm:text-lg text-gray-400 mb-2" >
                         MEET OUR
                     </p>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4" style={{ fontFamily: 'Josefin Sans' }}>

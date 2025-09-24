@@ -1,17 +1,20 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { X } from "lucide-react";
 import Link from "next/link";
+import EnquiryForm from "./EnquiryForm";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
 
   // ✅ Close on ESC key
   useEffect(() => {
-    const handleEsc = (e: { key: string; }) => {
+    const handleEsc = (e: { key: string }) => {
       if (e.key === "Escape") {
         setMenuOpen(false);
+        setFormOpen(false);
       }
     };
 
@@ -25,25 +28,33 @@ const Navbar = () => {
       <header className="w-full bg-white flex justify-between items-center px-4 sm:px-8 md:px-12 h-20 md:h-28 border-b border-gray-200" style={{ fontFamily: "var(--font-primary)" }}>
         {/* Left Links */}
         <nav className="flex items-center text-center space-x-4 sm:space-x-6 md:space-x-8 tracking-widest text-black uppercase cursor-pointer">
-          <Link href="#" className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]">Home</Link>
-          <Link href="/about" className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]">About</Link>
-          <a href="#" className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]">Portfolio</a>
-          <a href="#" className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]">Wedding<br />Planning</a>
+          <Link href="#">Home</Link>
+          <Link href="/about">About</Link>
+          <a href="#">Portfolio</a>
+          <a href="#">Wedding<br />Planning</a>
         </nav>
 
         {/* Logo */}
         <h1
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-widest cursor-pointer"
-          style={{ fontFamily: "var(--font-font-third)" }}
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-widest cursor-pointer"
+          style={{ fontFamily: "var(--font-fourth)" }}
         >
-          AS PRODUCTIONS
+          OpulentsEvents
         </h1>
 
         {/* Right Links */}
         <nav className="flex items-center text-center space-x-4 sm:space-x-6 md:space-x-8 tracking-widest text-black uppercase cursor-pointer">
-          <a href="#" className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]">Event<br />Planning</a>
-          <a href="#" className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]">Blog</a>
-          <a href="#" className="italic underline font-[--font-primary] text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]">Inquire</a>
+          <a href="#">Event<br />Planning</a>
+          <a href="#">Blog</a>
+
+          {/* Enquiry Trigger */}
+          <button
+            onClick={() => setFormOpen(true)}
+            className="italic underline text-[12px] sm:text-[13px] md:text-[13px] lg:text-[13px]"
+            style={{ fontFamily: "var(--font-primary)" }}
+          >
+            Inquire
+          </button>
 
           {/* Hamburger */}
           <button
@@ -66,7 +77,6 @@ const Navbar = () => {
               LU<br />XE
             </h2>
 
-            {/* Social icons */}
             <div className="flex space-x-3 sm:space-x-4 mt-6 text-base sm:text-xl">
               <a href="#">🎵</a>
               <a href="#">📸</a>
@@ -74,7 +84,6 @@ const Navbar = () => {
               <a href="#">📌</a>
             </div>
 
-            {/* Image */}
             <div className="mt-8 sm:mt-10">
               <img
                 src="your-image.jpg"
@@ -83,7 +92,6 @@ const Navbar = () => {
               />
             </div>
 
-            {/* Text */}
             <p className="mt-6 text-xs sm:text-sm md:text-base max-w-xs">
               Serving the great Wild West, our teams are based in Portland Oregon
               and Seattle Washington.
@@ -126,6 +134,9 @@ const Navbar = () => {
           </button>
         </div>
       )}
+
+      {/* Enquiry Modal */}
+      <EnquiryForm open={formOpen} onClose={() => setFormOpen(false)} />
     </>
   );
 };

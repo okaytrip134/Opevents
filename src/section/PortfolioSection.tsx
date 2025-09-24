@@ -37,7 +37,7 @@ export default function PortfolioSection() {
         <p className="uppercase text-sm tracking-widest text-gray-500 mb-3">
           Professional, creative, and attentive
         </p>
-        <h2 className="text-4xl md:text-5xl font-serif mb-6">Our Portfolio</h2>
+        <h2 className="text-4xl md:text-5xl font-serif mb-6"style={{ fontFamily: "var(--font-fourth)" }}>Our Portfolio</h2>
         <p className="text-gray-700 leading-relaxed">
           Our portfolio showcases our expertise in designing and planning unique
           and unforgettable weddings. From intimate celebrations to grand

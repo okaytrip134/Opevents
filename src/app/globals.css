@@ -1,5 +1,6 @@
   /* ✅ Import Google Fonts FIRST */
   @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:wght@300;400;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Yellowtail&display=swap');
   @import url('https://fonts.cdnfonts.com/css/noir-et-blanc');
   @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 
@@ -9,8 +10,9 @@
   /* ✅ Define font variables in :root */
   :root {
     --font-primary: 'Josefin Sans', sans-serif;
-    --font-secondary: 'Delius Swash Caps',sans-serif ;
+    --font-secondary: "Yellowtail",sans-serif ;
     --font-third: 'Noir-et-Blanc', sans-serif;
+    --font-fourth: "Delius Swash Caps", sans-serif;
   }
 
   /* ✅ Use variables in your styles */
@@ -45,3 +47,6 @@
     animation: marquee 30s linear infinite;
   }
   /* ...existing code... */
+
+
+  
