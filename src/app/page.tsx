@@ -3,7 +3,8 @@ import HeroSection from "@/section/HeroSection"
 import LuxeSection from "@/section/LuxeSection"
 import Offerings from "@/section/Offerings"
 import PortfolioSection from "@/section/PortfolioSection"
-import MarqueeText from "@/component/MarqueeText"
+import MarqueeText from "@/section/MarqueeText"
+import Events from "@/section/Events"
 
 
 const page = () => {
@@ -14,6 +15,7 @@ const page = () => {
       <Offerings/>
       <LuxeSection/>
       <MarqueeText/>
+      <Events/>
       {/* <ImageMarquee/> */}
       <PortfolioSection/>
     </main>

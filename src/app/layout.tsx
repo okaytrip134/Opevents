@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import "./globals.css";
 import Navbar from "@/component/Navbar";
 import LenisProvider from "@/component/LenisProvider";
+import Footer from "@/component/Footer";
 
 export const metadata: Metadata = {
   title: "Eventer",
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <LenisProvider>
           <Navbar />
           {children}
+          <Footer/>
         </LenisProvider>
       </body>
     </html>

@@ -39,32 +39,7 @@ const LuxeSection = () => {
             </div>
 
             {/* -------- Black Section -------- */}
-            <div className="bg-black text-white flex flex-col md:flex-row items-center justify-center md:justify-between h-[700px]">
-                {/* Left Image */}
-                <div className="w-full md:w-1/2 h-full flex justify-center">
-                    <img
-                        src="https:static.showit.co/800/I36cEh2WQDyVOAJn22k5Ug/69014/luxe-85_1.jpg"
-                        alt="About Luxe Team"
-                        className="shadow-lg w-full h-full object-cover"
-                    />
-                </div>
 
-                {/* Right Content */}
-                <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-4">
-                    <p className="tracking-widest text-base sm:text-lg text-gray-400 mb-2" >
-                        MEET OUR
-                    </p>
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4" style={{ fontFamily: 'Josefin Sans' }}>
-                        Leadership Team
-                    </h2>
-                    <div className="h-px w-12 bg-gray-400 mb-4"></div>
-                    <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg max-w-md" style={{ fontFamily: 'Josefin Sans' }}>
-                        Give us a blank space (a warehouse, a private property, a field of
-                        wildflowers, a magazine spread) and watch us create something
-                        remarkable.
-                    </p>
-                </div>
-            </div>
         </div>
     );
 };
