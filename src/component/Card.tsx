@@ -1,33 +1,57 @@
 import React from "react";
+import { ArrowRight } from "lucide-react";
 
 interface CardProps {
   imageSrc: string;
   title: string;
-  description: string;
-  buttonText: string;
+  description?: string;
+  buttonText?: string;
+  className?: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, description, buttonText }) => {
+const Card: React.FC<CardProps> = ({
+  imageSrc,
+  title,
+  description,
+  buttonText,
+  className = "",
+}) => {
   return (
-    <div className="flex flex-col h-full bg-white rounded-2xl shadow-md overflow-hidden">
-      {/* Image Section */}
-      <div className="w-full h-56">
+    <article
+      className={`h-full flex flex-col rounded-2xl bg-white overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${className}`}
+    >
+      {/* Image wrapper with hover zoom */}
+      <div className="aspect-[4/3] w-full bg-gray-100 overflow-hidden">
         <img
           src={imageSrc}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+          loading="lazy"
         />
       </div>
 
       {/* Content */}
-      <div className="p-4 flex flex-col flex-grow text-center">
-        <h2 className="text-lg font-bold text-gray-800">{title}</h2>
-        <p className="text-gray-600 text-sm mt-2 mb-4 flex-grow">{description}</p>
-        <button className="bg-pink-200 text-gray-800 px-4 py-2 rounded shadow-sm text-sm font-medium hover:bg-pink-300 transition">
-          {buttonText}
-        </button>
+      <div className="p-4 flex flex-col flex-1 text-center">
+        <h3 className="text-lg font-semibold text-gray-800 leading-tight line-clamp-2">
+          {title}
+        </h3>
+
+        {description && (
+          <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+            {description}
+          </p>
+        )}
+
+        {buttonText && (
+          <div className="mt-auto pt-4">
+            <button className="inline-flex items-center gap-2 text-sm font-semibold text-[#D2737D] px-4 py-2 rounded-lg transition-all duration-300 group">
+              {buttonText}
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
+          </div>
+        )}
       </div>
-    </div>
+    </article>
   );
 };
 
