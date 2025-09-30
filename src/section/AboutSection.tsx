@@ -5,7 +5,8 @@ const AboutSection = () => {
   // ✅ GIF sources
   const gifs = [
     "//static.showit.co/file/pAuSe6QCOdaZDJgub1YRmw/69014/inshot_20241106_124952724.gif",
-    "//static.showit.co/file/OeYWutCpAHUY6mbhOUuriA/69014/inshot_20241106_125553623.gif",
+    "/gif/Wedding.gif",
+    "/gif/wedding 1.gif",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,14 +20,14 @@ const AboutSection = () => {
 
   return (
     <section className=" py-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center ">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
         {/* Left Column */}
         <div>
           {/* Logo */}
-          <h2 className="text-6xl font-serif leading-none mb-8">
-            AS
+          <h2 className="text-6xl font-serif leading-none mb-8" style={{ fontFamily: 'var(--font-fourth )' }}>
+            Op
             <br />
-            Production
+            Events
           </h2>
 
           {/* Heading */}
@@ -51,7 +52,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right Column (GIF Slideshow) */}
-        <div className="w-[450px] h-[650px] ms-auto overflow-hidden">
+        <div className="w-[450px] h-[650px] ms-auto overflow-hidden rounded-2xl">
           <img
             src={gifs[currentIndex]}
             alt="Event Celebration"

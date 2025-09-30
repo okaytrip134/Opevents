@@ -7,16 +7,16 @@ const LuxeSection = () => {
             <div className="bg-white flex flex-col md:flex-row items-center justify-center md:justify-between h-[700px]">
                 {/* Left Content */}
                 <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center px-4" >
-                    <p className="tracking-widest text-xs sm:text-lg text-gray-500 mb-2">
+                    <p className="tracking-widest text-xs sm:text-xl text-gray-500 mb-2">
                         LEARN OUR STORY
                     </p>
 
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-light mb-2 leading-snug" style={{ fontFamily: 'Josefin Sans' }}>
+                    <h2 className="text-4xl sm:text-3xl md:text-5xl font-light mb-2 leading-snug" style={{ fontFamily: 'Josefin Sans' }}>
                         SERVICING THE{" "}
                         <span className="italic text-sky-700" style={{ fontFamily: 'var(--font-secondary)' }}>Wild West</span>
                     </h2>
 
-                    <h3 className="text-2xl sm:text-2xl md:text-3xl font-semibold mb-4">
+                    <h3 className="text-2xl sm:text-2xl md:text-5xl font-semibold mb-4">
                         we are <span className="font-bold" style={{ fontFamily: 'var(--font-third)' }}>OpEvents</span>
                     </h3>
 
@@ -31,7 +31,7 @@ const LuxeSection = () => {
                 {/* Right Image */}
                 <div className="w-full md:w-1/2 h-full flex justify-center">
                     <img
-                        src="https://static.showit.co/1200/IgRwSu2wTFeuNTozbwEgww/69014/luxe-event-productions-seattle-wedding-planners.jpg"
+                        src="/gif/wedding 1.gif"
                         alt="About Luxe Team"
                         className="shadow-lg w-full h-full object-cover"
                     />

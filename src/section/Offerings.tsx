@@ -13,7 +13,7 @@ const offerings = [
   },
   {
     title: "QUEER WEDDINGS",
-    img: "https://static.showit.co/file/OeYWutCpAHUY6mbhOUuriA/69014/inshot_20241106_125553623.gif",
+    img: "/gif/wedding 1.gif",
   },
   {
     title: "PUBLIC EVENTS",
